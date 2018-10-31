@@ -118,6 +118,7 @@ a {
 }
 
 
+
 /* HERO SECTION */
 
 .hero {
@@ -125,6 +126,10 @@ a {
     background-size: cover;
     background-position: center;
     height: 100vh;
+}
+
+header {
+    position: relative;
 }
 
 h1,
@@ -149,6 +154,48 @@ h2,
 .topSiteNav a {
     padding: 20px;
 }
+
+.hamburgerMenu {
+    color: white;
+    float: right;
+    padding: 20px;
+}
+
+.mobileNav {
+    visibility: hidden;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.mobileNav li {
+    padding: 20px;
+}
+
+.mobileNav a {
+    padding: 15px;
+}
+
+.mobileSocialMenu ul {
+    width: 346px;
+    margin: 0 auto;
+}
+
+.mobileSocialMenu li{
+    float: left;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ div{
+	    visibility: visible;				
+    }
+    
+form.hamburgerMenu {
+    display: none;
+}    
 
 .socialNav {
     margin-top: 25vh;
@@ -481,12 +528,31 @@ footer .legal p {
         float: none;
         clear: both;
     }
-
 }
 
 @media (max-width: 800px) {
 
-    
+
+    h1 {
+        font-size: 10rem;
+    }
+
+    h1 span {
+        font-size: 2.2rem;
+    }
+
+    .topSiteNav,
+    .socialNav {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+
+    form.hamburgerMenu {
+        display: block;
+    } 
 
 
     .links li {
